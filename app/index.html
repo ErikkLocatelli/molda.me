@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de medidas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Cadastro de medidas</h1>
+        <form class="form-container" data-form="form">
+            <label>
+                Medida:
+                <input type="text" id="nome" required>
+            </label>
+            <label>
+                Valor:
+                <input type="number" id="valor" required>
+            </label>
+            <label>
+                Unidade: 
+                <select id="unidade">
+                    <option value="cm">cm</option>
+                    <option value="mm">mm</option>
+                    <option value="pl">pl</option>
+                </select>
+            </label>
+            <button type="submit">Cadastrar medida</button>
+        </form>
+        <section class="tabela-container">
+            <h2>Medidas cadastradas</h2>
+            <table class="tabela-medidas" data-tabela="medidas">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Valor</th>
+                    <th>Unidade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- JS vai inserir as linhas aqui -->
+            </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
