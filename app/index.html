@@ -8,7 +8,7 @@
 </head>
 <body>
     <main>
-        <h1>Cadastro de medidas</h1>
+        <h1>Cadastro de <span>me.</span>didas</h1>
         <form class="form-container" data-form="form">
             <label>
                 Medida:
@@ -16,9 +16,7 @@
             </label>
             <label>
                 Valor:
-                <input type="number" id="valor" required>
-            </label>
-            <label>
+                <input type="number" id="valor" min="0" required>
                 Unidade: 
                 <select id="unidade">
                     <option value="cm">cm</option>
@@ -26,22 +24,19 @@
                     <option value="pl">pl</option>
                 </select>
             </label>
-            <button type="submit">Cadastrar medida</button>
+            <button type="submit">Cadastrar Medida</button>
         </form>
         <section class="tabela-container">
-            <h2>Medidas cadastradas</h2>
+            <h2><span>Me</span>didas Cadastradas</h2>
             <table class="tabela-medidas" data-tabela="medidas">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Valor</th>
-                    <th>Unidade</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- JS vai inserir as linhas aqui -->
-            </tbody>
+                <thead>
+                    <tr data-tabela="top" class="tabela-top">
+                        <th>No<span>.me</span></th>
+                        <th>Valor</th>
+                        <th>Unidade</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
             </table>
         </section>
     </main>

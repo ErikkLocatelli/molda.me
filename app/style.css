@@ -2,5 +2,122 @@
     padding: 0;
     box-sizing: border-box;
     margin: 0;
-    border: 0;
 }
+
+main { 
+  max-width: 700px;
+  min-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #A5A1AF;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  padding: 0.2em;
+  gap: 3px;
+  margin: .3em 0;
+}
+
+label > input {
+  flex: 1;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.131);
+  padding: 5px;
+}
+
+label > select {
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.136);
+    padding: 5px;
+}
+
+button[type="submit"] {
+  background: #7b57c2; 
+  color: rgba(255, 255, 255, 0.887);
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px; 
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+span {
+    color: #7b57c2;
+}
+
+/* Estilização apenas da parte da tabela */
+
+h2 {
+    text-align: center;
+    color: #A5A1AF;
+    margin: 20px;
+}
+
+.tabela-medidas {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabela-top {
+    display: none;
+}
+
+.ativo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabela-top > th {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.tabela-infos {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.079);
+}
+
+.tabela-infos th {
+    flex: 1; 
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.193);
+}
+
+.remover {
+  background: #7b57c2; 
+  color: rgba(255, 255, 255, 0.887);
+  font-weight: bold;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 10px; 
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
